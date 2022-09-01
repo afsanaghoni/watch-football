@@ -4,11 +4,41 @@
     padding: 0;
 }
 
+
 body {
     width: 90%;
     margin: 5% auto;
 }
 
+small {
+    color: gray;
+}
+
+
+/*
+........... common styles
+............................... */
+.btn {
+    width: 187px;
+    height: 56px;
+    background-color: #fdd686;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.btn>a {
+    text-decoration: none;
+    color: #374e86;
+
+}
+
+
+/*
+........... header styles
+............................... */
 .header {
     background-color: #374e86;
     display: flex;
@@ -42,23 +72,9 @@ body {
 }
 
 
-.btn {
-    width: 187px;
-    height: 56px;
-    background-color: #fdd686;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-}
-
-.btn>a {
-    text-decoration: none;
-    color: #374e86;
-
-}
-
+/*
+........... main section styles
+............................... */
 
 
 .container {
@@ -70,12 +86,22 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin-left: 10px;
 }
 
-.card {
-    border: 1px solid rgb(189, 189, 20);
+
+.card img {
+    width: 100%;
 }
 
+.card p,
+button {
+    margin: 10px 0;
+}
+
+.card i {
+    color: #c7c6c3;
+}
 
 
 
@@ -104,6 +130,10 @@ body {
 
         grid-template-columns: 1fr;
 
+    }
+
+    .card {
+        padding: 30px;
     }
 
     .aside {
