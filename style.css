@@ -211,7 +211,13 @@ footer a:hover .fab {
     }
 
     .aside {
+        width: 100%;
         display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        width: 25%;
     }
 
     .footer-text,
